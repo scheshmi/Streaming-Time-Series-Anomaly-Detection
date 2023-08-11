@@ -61,7 +61,7 @@ class TimeSeriesAnomalyDetector:
         X, y = self.create_dataset(df[['value']], df.value, time_step)
         
     #   model = self.build_model(X)
-        model = keras.models.load_model('./model5.h5')
+        model = keras.models.load_model('.models/new_model.h5')
 
         X_pred = model.predict(X,batch_size=32)
 

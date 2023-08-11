@@ -63,4 +63,4 @@ if __name__ == '__main__':
         shuffle=False
         )
 
-    model.save('./new_model4.h5')
+    model.save('./models/new_model.h5')
